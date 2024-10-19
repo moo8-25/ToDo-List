@@ -1,0 +1,243 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.circ {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+body {
+    background-color: rgb(29, 30, 70);
+}
+
+.main_sec .container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.main_sec .container .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    box-shadow: 3px 3px 3px 3px rgb(21, 20, 22);
+}
+
+.center .header {
+    color: white;
+    background-color: #62229e;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h2 {
+    margin-left: 385px;
+}
+
+.header button {
+    margin-right: 10px;
+    color: #62229e;
+}
+
+.tasks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    direction: rtl;
+    background-color: rgb(225, 230, 234);
+    border-bottom: 1px solid black;
+    padding: 10px 20px;
+}
+
+
+
+.tasks .task {
+    padding: 10px 15px;
+    background-color: rgb(237, 237, 237);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.tasks .done {
+    background-color: rgb(158, 253, 160);
+}
+
+.tasks .task:hover {
+    box-shadow: 2px 2px 2px 2px rgb(74, 74, 74);
+    transition: 0.5s;
+}
+
+.info span:first-of-type {
+    line-height: 0;
+    font-size: 18px;
+}
+
+.task .info {
+    width: 70%;
+}
+
+.task .icons {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task .icons button:first-of-type {
+    color: white;
+    background-color: rgb(68, 14, 14);
+}
+
+.task .icons button:nth-of-type(2) {
+    color: white;
+    background-color: rgb(1, 126, 1);
+}
+
+.task .icons button:nth-of-type(3) {
+    color: white;
+    background-color: rgb(48, 48, 133);
+}
+
+.icons span {
+    font-size: 22px;
+}
+
+@media (max-width:750px) {
+
+    .main_sec .container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 70px;
+    }
+
+    .main_sec .container .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        box-shadow: 3px 3px 3px 3px rgb(21, 20, 22);
+    }
+
+    .tasks {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        direction: rtl;
+        background-color: rgb(225, 230, 234);
+        border-bottom: 1px solid black;
+        padding: 10px 20px;
+    }
+
+
+
+    .tasks .task {
+        padding: 10px 15px;
+        /* background-color: rgb(237, 237, 237); */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .tasks .done {
+        background-color: rgb(158, 253, 160);
+    }
+
+    .center .header {
+        color: white;
+        background-color: #62229e;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info h1 {
+        margin-bottom: 0px;
+    }
+
+    .info span {
+        margin-bottom: 20px;
+    }
+
+    .header h2 {
+        display: none;
+    }
+
+    .task .icons {
+        margin-top: 10px;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header button {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #62229e;
+    }
+}
+
+@media (max-width:910px) {
+    .center .header {
+        color: white;
+        background-color: #62229e;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header h2 {
+        display: none;
+    }
+
+    .done {
+        background-color: rgb(158, 253, 160);
+    }
+
+    .header button {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #62229e;
+    }
+}
